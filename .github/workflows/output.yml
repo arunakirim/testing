@@ -1,0 +1,8 @@
+name: Deployment Excerice 1
+on: Issues
+jobs:
+  issues:
+    runs-on: ubunto-latest
+    steps:
+      - name: Issues Found
+        run: ${{toJson(github.event)}}
