@@ -1,8 +1,8 @@
-name: Deployment Excerice 1
-on: Issues
+name: Handle issues
+on: issues
 jobs:
-  issues:
-    runs-on: ubunto-latest
+  Output-info:
+    runs-on: ubuntu-latest
     steps:
       - name: Issues Found
-        run: ${{toJson(github.event)}}
+        run: echo "${{toJson(github.event)}}"
